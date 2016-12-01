@@ -84,12 +84,7 @@ function fetchInboxes() {
 }
 
 Front.on('panel_visible', function (visible) {
-  Front.dialog('alert', {
-    title: 'I\'m an alert dialog',
-    message: 'You are now alerted',
-  }, function () {
-    console.log('Alert closed');
-  });
+  console.log("panel toggled");
 });
 
 Front.on('conversation', function (data) {
@@ -97,11 +92,5 @@ Front.on('conversation', function (data) {
   console.log('Contact', data.contact);
   console.log('Message', data.message);
   console.log('OtherMessages', data.otherMessages);
-  Front.dialog('alert', {
-    title: 'I\'m an alert dialog',
-    message: 'You are now alerted',
-  }, function () {
-    console.log('Alert closed');
-  });
   conversation = data.conversation;
 });
