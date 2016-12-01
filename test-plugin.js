@@ -1,16 +1,5 @@
 var conversation;
 
-var crypto = require('crypto');
-var apiSecret = '21c740083b7ab960';
-
-function validateFrontSignature(data, signature) {
-    var hash = crypto.createHmac('sha1', apiSecret)
-                     .update(JSON.stringify(data))
-                     .digest('base64');
-
-   return hash === signature;
-}
-
 function unassign() {
   Front.unassign(conversation);
 }
