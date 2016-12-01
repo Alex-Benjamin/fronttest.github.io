@@ -83,6 +83,10 @@ function fetchInboxes() {
   });
 }
 
+Front.on('panel_visible', function (visible) {
+     reply();
+});
+
 Front.on('conversation', function (data) {
   console.log('Conversation', data.conversation);
   console.log('Contact', data.contact);
