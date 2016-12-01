@@ -73,6 +73,7 @@ function fetchInboxes() {
 }
 
 Front.on('panel_visible', function (visible) {
+  alertDialog();
   console.log("panel toggled");
 });
 
