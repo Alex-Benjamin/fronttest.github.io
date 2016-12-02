@@ -1,0 +1,96 @@
+body {
+ font-family: Arial;
+}
+
+.excontainer {
+  padding: 1em;
+}
+
+label {
+ display: block;
+ width: 100%;
+}
+
+p {
+ padding: .5em;
+}
+
+a, a:visited {
+ color: #2d9afd;
+}
+
+.changed {
+  color: #ff0099;
+}
+
+.highlight {
+  background: #faffda;
+}
+
+.entered {
+  color: #f5560a;
+}
+
+.green {
+ color: #7fbf38;
+}
+
+.hellomouse, .clickable, #foo, #event {
+ cursor: pointer;
+}
+
+button {
+ margin-bottom: 1em;
+}
+
+div {
+  margin: 1em 0;
+}
+
+#foo {
+ display: inline-block;
+}
+
+
+
+ul {
+ margin: 1em 0;
+}
+
+.form, form, .stuff, .morestuff, stuff3 {
+    margin: 1em 0;
+    padding: 1em;
+    background: #ececec;
+}
+
+input {
+ font-size: 1.1em;
+ padding: 2px;
+}
+
+.placeholder {
+   color: #ff0099;
+   font-weight: normal;
+}
+
+::-webkit-input-placeholder {
+   color: #cccccc;
+}
+
+:-moz-placeholder {
+   color: #cccccc;
+}
+
+:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.content {
+    margin-top: 5px;
+    padding: 1em;
+    background: #eeeeee;
+}

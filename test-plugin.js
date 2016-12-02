@@ -1,7 +1,25 @@
 var conversation;
 
+$(function(){
+    // don't cache ajax or content won't be fresh
+    $.ajaxSetup ({
+        cache: false
+    });
+    var ajax_load = "<img src='http://i.imgur.com/pKopwXp.gif' alt='loading...' />";
+
+    // load() functions
+    var loadUrl = "RSConnect.php";
+    $("#loadbasic").click(function(){
+        $("#result").html(ajax_load).load(loadUrl);
+    });
+
+// end
+});
+
 function unassign() {
   Front.unassign(conversation);
+
+
 }
 
 function toggleArchive() {
